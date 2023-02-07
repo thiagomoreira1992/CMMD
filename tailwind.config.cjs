@@ -8,6 +8,9 @@ module.exports = {
     extend: {
       colors: {
         'light-blue' : '#e4f5ff'
+      },
+      fontFamily:{
+        'open' : ['"Open Sans"'],
       }
     },
   },

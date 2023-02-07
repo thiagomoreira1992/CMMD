@@ -1,10 +1,11 @@
+
 import Cmmd from "./Pages/Cmmd"
 import Login from "./Pages/Login"
 
 function App() {
 
   return (
-    <Login/>
+    <Cmmd/>
   )
 }
 
