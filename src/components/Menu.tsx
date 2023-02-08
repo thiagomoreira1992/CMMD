@@ -1,4 +1,4 @@
-import { House, File, FilePlus, ArrowFatDown, ArrowFatUp } from 'phosphor-react'
+import { House, File, FilePlus, ArrowFatDown, ArrowFatUp, SignOut } from 'phosphor-react'
 
 function Menu() {
     return (
@@ -36,6 +36,11 @@ function Menu() {
                     className='mb-6 -ml-3 drop-shadow-[2px_2px_3px_rgba(0,0,0,0.25)]'
                 />
             </div>
+            <SignOut
+                size='57'
+                weight='light'
+                color='#a3a3a3'
+                className='bg-transparent drop-shadow-[2px_2px_3px_rgba(0,0,0,0.25)] hover:border hover:border-r-gray-400 hover:border-b-gray-400 hover:border-t-transparent hover:border-l-transparent transition-all' />
         </div>
     )
 }

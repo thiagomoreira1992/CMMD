@@ -16,7 +16,7 @@ body{
     background-color: #e4f5ff;
 }
 
-body div div:nth-child(2){
+#mainPage{
     width: calc(95vw - 6rem);
 }
 

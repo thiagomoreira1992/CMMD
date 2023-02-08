@@ -18,7 +18,7 @@ function Login() {
         <img src={`${Photo}`} alt="" className="ml- bg-blend-luminosity"></img>
       </div>
       <main className="w-96 !important h-64 bg-light-blue rounded-xl p-4 drop-shadow-md flex flex-col items-center">
-          {/* <h2 className="font-open text-xl font-bold text-gray-400">Entrar</h2> */}
+          {/* <h2 >Entrar</h2> */}
         <article 
             className="py-3 flex flex-col items-center justify-center gap-3"
         >
