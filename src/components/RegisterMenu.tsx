@@ -2,14 +2,12 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom'
 
+type childData = {
+    childToParent: (newType: string) => void;
+}
 
-function RegisterMenu() {
-    const [link, setLink] = useState("materiais");
 
-
-    function handleRegisterTab(){
-
-    }
+function RegisterMenu({childToParent}:childData ) {
 
     return (
         <div
@@ -17,13 +15,16 @@ function RegisterMenu() {
         >
             <button
                 className='w-full hover:bg-gray-300  transition-all rounded-b-xl shadow-inner shadow-white'
-                id={"category"}>Categoria</button>
+                id={"category"}
+                onClick={() => childToParent("categoria")}>Categoria</button>
             <button
                 className='w-full hover:bg-gray-300  transition-all rounded-b-xl shadow-inner shadow-white'
-                id={"materiais"}>Materiais</button>
+                id={"materiais"}
+                onClick={() => childToParent("materiais")}>Materiais</button>
             <button
                 className='w-full hover:bg-gray-300  transition-all rounded-b-xl shadow-inner shadow-white'
-                id={"registro"}>Registro</button>
+                id={"registro"}
+                onClick={() => childToParent("registro")}>Registro</button>
         </div>
     )
 }
