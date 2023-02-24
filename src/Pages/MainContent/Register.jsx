@@ -6,14 +6,14 @@ import RecordRegister from "./RegisterPages/RecordRegister";
 
 
 function Register(){
-  const [link, setLink] = useState<string>("registro");
+  const [link, setLink] = useState("registro");
 
 
-  const childToParent = (childdata: string) => {
+  const childToParent = (childdata) => {
     setLink(childdata);
   };
 
-  function handleChangeRegister(link: string) {
+  function handleChangeRegister(link) {
     switch (link) {
       case "categoria":
         return <CategoryRegister />;

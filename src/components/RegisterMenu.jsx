@@ -2,12 +2,10 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom'
 
-type childData = {
-    childToParent: (newType: string) => void;
-}
 
 
-function RegisterMenu({childToParent}:childData ) {
+
+function RegisterMenu({childToParent}) {
 
     return (
         <div

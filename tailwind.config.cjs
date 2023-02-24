@@ -1,18 +1,19 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   important: true,
-  content: [
-    './src/**/*.tsx',
-  ],
-  theme: {    
+  content: ["./src/**/*.jsx"],
+  theme: {
     extend: {
-      colors: {
-        'light-blue' : '#e4f5ff'
+      screens: {
+        sm: "240px",
       },
-      fontFamily:{
-        'open' : ['"Open Sans"'],
-      }
+      colors: {
+        "light-blue": "#e4f5ff",
+      },
+      fontFamily: {
+        open: ['"Open Sans"'],
+      },
     },
   },
   plugins: [],
-}
+};
